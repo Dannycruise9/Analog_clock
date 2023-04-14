@@ -1,0 +1,30 @@
+{
+  "name": "Analog Clock",
+  "short_name": "clock",
+  "start_url": "./?utm_source=pwa1",
+  "display": "standalone",
+  "description": "this is an analog clock with an alarm",
+  "lang": "en ",
+  "dir": "auto",
+  "theme_color": "#ffc252",
+  "background_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "size": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "size": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/maskable_icon_x512 (1).png",
+      "size": "512x512",
+      "type": "image/png",
+      "purposes": "maskable"
+    }
+  ]
+}

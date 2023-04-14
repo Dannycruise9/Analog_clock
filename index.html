@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/favicon-removebg-preview.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      navigator.serviceWorker.register("service-worker.js");
+    </script>
+    <title>ANALOG CLOCK</title>
+  </head>
+  <body>
+    <section>
+
+      <div class="clock">
+        <div class="sec"></div>
+        <div class="min"></div>
+        <div class="hour"></div>
+        <div class="circle"></div>
+
+
+            <form id="alarm-form">
+              <label for="alarm-time">SET ALARM</label>
+              <input
+                type="number"
+                required
+                id="alarm-hour"
+                min="01"
+                max="12"
+                placeholder="hour"
+              />
+              <input
+                type="number"
+                id="alarm-min"
+                min="00"
+                max="59"
+                placeholder="min"
+              />
+              <select name="" id="am-pm">
+                <option id="AM" value="am">AM</option>
+                <option id="PM" value="pm">PM</option>
+              </select>
+              <button id="set-alarm">Set Alarm</button>
+              <button id="clear-alarm">clear</button>
+            </form>
+           
+          </div>
+      </div>
+
+     
+
+      <audio
+        id="tickingSound"
+        preload="auto" src="/sound/ticking-clock_1-27477.mp3"></audio>
+      <audio id="alarmAudio"preload="auto"
+        src="/sound/Alarm-Fast-A1-www.fesliyanstudios.com.mp3"
+      ></audio>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
